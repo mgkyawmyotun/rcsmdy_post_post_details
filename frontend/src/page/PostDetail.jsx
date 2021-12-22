@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { PostDetailCard } from '../components/PostDetailCard';
 import { usePostDetail } from '../hook/usePostDetail';
 import styles from '../scss/post_detail.module.scss';
 export const PostDetail = () => {
@@ -7,9 +8,15 @@ export const PostDetail = () => {
   const [post] = usePostDetail(id);
   return (
     <div className={styles.post_detail}>
-      <h1>{id}</h1>
-      <h3>{post && post.title}</h3>
-      <h4>{post && post.body}</h4>
+      {post && (
+        <PostDetailCard
+          title={post.title}
+          text={post.body}
+          author={'Kyaw Myo Tun'}
+          created_at={Date.now()}
+          post_id={id}
+        />
+      )}
     </div>
   );
 };

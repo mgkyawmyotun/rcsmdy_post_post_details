@@ -1,2 +1,36 @@
+@import 'fonts';
 .post_detail {
+  background-color: #fceee4;
+  width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+.post_detail__card {
+  background-color: #faf4f0;
+  padding: 4em 1em;
+
+  & > h1 {
+    font-size: 1.5rem;
+    @include lora_bold();
+    margin-bottom: 1em;
+    text-align: center;
+    text-decoration: underline;
+  }
+  & > h2 {
+    font-size: 1.25rem;
+    @include roboto_regular();
+  }
+  & > .card__details {
+    margin-top: 2em;
+    & > h4 {
+      font-size: 1rem;
+    }
+    & > h5 {
+      font-size: 1rem;
+    }
+  }
 }
