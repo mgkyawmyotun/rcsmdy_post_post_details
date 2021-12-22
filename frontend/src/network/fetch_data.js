@@ -9,3 +9,13 @@ export async function getPosts() {
     console.log('ERROR');
   }
 }
+
+export async function getPost(post_id) {
+  try {
+    const response = await fetch(BACKEND_URL + '/posts/' + post_id);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log('ERRRORORR');
+  }
+}
