@@ -1,0 +1,12 @@
+@import 'fonts';
+.post {
+  background-color: #ffe5d3;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1em 2em 1em 2em;
+  & > h1 {
+    @include lora_bold;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
