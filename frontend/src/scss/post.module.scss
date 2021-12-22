@@ -1,12 +1,43 @@
 @import 'fonts';
 .post {
-  background-color: #ffe5d3;
+  background-color: #fceee4;
   width: 60%;
   margin: 0 auto;
   padding: 1em 2em 1em 2em;
+  height: 100vh;
+
   & > h1 {
     @include lora_bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
     text-align: center;
+  }
+  overflow-y: scroll;
+}
+.post_lists {
+  width: 100%;
+  margin-top: 1em;
+  padding: 2em 1em;
+}
+
+.post__card {
+  padding: 1em;
+  background-color: #ffe5d3;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(238, 168, 118);
+  }
+  transition: background-color;
+  transition-duration: 500ms;
+  & > h1 {
+    font-size: 1.25rem;
+    @include roboto_bold;
+    margin-bottom: 1em;
+  }
+  & > h3 {
+    font-size: 1rem;
+    @include roboto_regular;
   }
 }
