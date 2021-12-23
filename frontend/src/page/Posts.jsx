@@ -13,7 +13,7 @@ export const Posts = () => {
               title={post.title}
               text={post.body}
               key={index}
-              post_id={post.id}
+              post_id={post._id}
             />
           ))}
       </div>

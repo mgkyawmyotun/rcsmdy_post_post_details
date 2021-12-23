@@ -1,8 +1,8 @@
-const BACKEND_URL = 'https://jsonplaceholder.typicode.com';
+const BACKEND_URL = 'https://rcsmdy-post-post-details-48ujy.ondigitalocean.app';
 
 export async function getPosts() {
   try {
-    const response = await fetch(BACKEND_URL + '/posts');
+    const response = await fetch(BACKEND_URL + '/post');
     const data = await response.json();
     return data;
   } catch (error) {
@@ -12,7 +12,7 @@ export async function getPosts() {
 
 export async function getPost(post_id) {
   try {
-    const response = await fetch(BACKEND_URL + '/posts/' + post_id);
+    const response = await fetch(BACKEND_URL + '/post/' + post_id);
     const data = await response.json();
     return data;
   } catch (error) {

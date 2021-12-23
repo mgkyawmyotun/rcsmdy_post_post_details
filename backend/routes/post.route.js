@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 const { Post } = require('../model/Post');
 router.get('/', async (req, res) => {
   try {
-    const posts = await Post.find({});
+    const posts = await Post.find({}).select('title subtitle _id');
     res.json(posts);
   } catch (error) {
     req.status(500).json({ error: 'Internal Error' });
@@ -21,19 +21,19 @@ router.get('/:id', async (req, res) => {
   }
 });
 router.post('/create', async (req, res) => {
-  if (req.body.title && req.body.body) {
-    const post = new Post({
-      title: req.body.title,
-      body: req.body.body,
-      author: req.body.author,
-    });
-    try {
-      await post.save();
-      res.json({ response: 'Created Sucessfull' });
-    } catch (error) {
-      res.status(500).json({ error: 'Error At Creation Post' });
-    }
+  const post = new Post({
+    title: req.body.title || '',
+    subtitle: req.body.subtitle || '',
+    text: req.body.text || '',
+    author: req.body.author,
+  });
+  try {
+    await post.save();
+    res.json({ response: 'Created Sucessfull' });
+  } catch (error) {
+    res.status(500).json({ error: 'Error At Creation Post' });
   }
+
   // const post =
 });
 
