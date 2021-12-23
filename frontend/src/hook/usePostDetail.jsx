@@ -5,7 +5,6 @@ export const usePostDetail = (post_id) => {
   const [post, setPost] = useState();
   useEffect(() => {
     getPost(post_id).then((data) => {
-      console.log(data);
       setPost(data);
     });
   }, []);
