@@ -33,8 +33,6 @@ router.post('/create', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Error At Creation Post' });
   }
-
-  // const post =
 });
 
 module.exports = { router };

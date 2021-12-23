@@ -11,7 +11,7 @@ export const Posts = () => {
           posts.map((post, index) => (
             <Post
               title={post.title}
-              text={post.body}
+              text={post.subtitle}
               key={index}
               post_id={post._id}
             />
