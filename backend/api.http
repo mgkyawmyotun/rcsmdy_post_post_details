@@ -2,10 +2,10 @@ POST http://localhost:1337/post/create HTTP/1.1
 content-type: application/json
 
 {
-    "title": "Title Number One",
-    "subtitle":"one plus one is two three four five six",
-    "text":"Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel.sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel. ",
-    "author":"Ktyawer awef"
+    "title": "About Something Intresting",
+    "subtitle":"Fxs Lorem ipsum dolor   Lorem ipsum dolor sit",
+    "text":"Lorem ipsum dolor   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, s Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, s Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, s Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, s Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, sLorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel.sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel. ",
+    "author":"Kyaw Myo Tun"
 }
 
 ### 

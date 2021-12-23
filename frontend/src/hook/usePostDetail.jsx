@@ -7,6 +7,6 @@ export const usePostDetail = (post_id) => {
     getPost(post_id).then((data) => {
       setPost(data);
     });
-  }, []);
+  }, [post_id]);
   return [post];
 };
