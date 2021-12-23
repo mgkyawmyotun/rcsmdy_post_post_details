@@ -1,0 +1,17 @@
+POST http://localhost:1337/post/create HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Title Text",
+    "body":"one plus one is two three four five six",
+    "author":"Ktyawer awef"
+}
+
+### 
+GET http://localhost:1337/post HTTP/1.1
+content-type: application/json
+
+
+### 
+GET http://localhost:1337/post/61c4373ef34f6101056722b2 HTTP/1.1
+content-type: application/json

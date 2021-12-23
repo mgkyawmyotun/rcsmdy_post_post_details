@@ -1,11 +1,16 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const postRoute = require('./routes/post.route');
+require('dotenv').config();
+main().catch((err) => console.log(err));
+
+async function main() {
+  await mongoose.connect(process.env.MONGODB_URL);
+  app.listen(process.env.PORT || 1337, () => {
+    console.log(`Listening on port ${process.env.PORT || 1337}`);
+  });
+}
 const app = express();
-const port = 3000;
+app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+app.use('/post', postRoute.router);
