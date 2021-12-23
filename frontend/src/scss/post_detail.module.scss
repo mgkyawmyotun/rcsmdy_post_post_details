@@ -32,6 +32,11 @@
     text-align: center;
     text-decoration: underline;
   }
+  & > .subtitle {
+    font-size: 1.35rem;
+    @include roboto_bold();
+    margin-bottom: 1em;
+  }
   & > h2 {
     font-size: 1.25rem;
     @include roboto_regular();

@@ -15,7 +15,8 @@ export const PostDetail = () => {
       {post ? (
         <PostDetailCard
           title={post.title}
-          text={post.body}
+          subtitle={post.subtitle}
+          text={post.text}
           author={post.author}
           created_at={post.created_at}
           post_id={id}
