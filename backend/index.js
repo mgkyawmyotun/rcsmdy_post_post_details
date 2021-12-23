@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const postRoute = require('./routes/post.route');
+const cors = require('cors');
 require('dotenv').config();
 main().catch((err) => console.log(err));
 
@@ -11,6 +12,7 @@ async function main() {
   });
 }
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use('/post', postRoute.router);
