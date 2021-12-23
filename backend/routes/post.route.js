@@ -4,12 +4,11 @@ var mongoose = require('mongoose');
 const { Post } = require('../model/Post');
 router.get('/', async (req, res) => {
   try {
-    const posts = await Post.find({}).select(
-      'title subtitle _id -author -text'
-    );
+    const posts = await Post.find({}).select('-author -text');
     res.json(posts);
   } catch (error) {
-    req.status(500).json({ error: 'Internal Error' });
+    console.log(error);
+    res.status(500).json({ error: 'Internal Error' });
   }
 });
 

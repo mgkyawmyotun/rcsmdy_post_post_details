@@ -3,8 +3,8 @@ content-type: application/json
 
 {
     "title": "Title Number One",
-    "text":"one plus one is two three four five six",
-    "subtitle":"Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel.sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel. ",
+    "subtitle":"one plus one is two three four five six",
+    "text":"Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel.sit amet consectetur adipisicing elit. Quia provident, similique cumque alias laboriosam fuga, voluptatibus quibusdam at laudantium ex reiciendis sit sapiente assumenda excepturi delectus quidem velit? Sed, vel. ",
     "author":"Ktyawer awef"
 }
 
@@ -14,5 +14,5 @@ content-type: application/json
 
 
 ### 
-GET http://localhost:1337/post/61c4373ef34f6101056722b2 HTTP/1.1
+GET http://localhost:1337/post/61c44f898d141e9dffe718c5 HTTP/1.1
 content-type: application/json
