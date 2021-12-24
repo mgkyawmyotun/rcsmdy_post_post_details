@@ -3,8 +3,8 @@
   background-color: #fceee4;
   width: 60%;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 1em 2em;
@@ -53,4 +53,20 @@
 }
 .loading {
   position: absolute;
+}
+
+@media only screen and (max-width: 425px) {
+  .post_detail {
+    width: 100%;
+    padding: 0em;
+  }
+
+  .post_detail__card {
+    margin-top: 1em;
+    padding: 2em 1em;
+  }
+  .back_button {
+    top: 0;
+    left: 2%;
+  }
 }
